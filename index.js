@@ -126,7 +126,7 @@ message.channel.send(`${message.author},<:733987631628550175:870949748604039189>
  if (message.author.bot) return false;
 
  if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
- if(db.has(user.id + '-afk')) message.channel.send(`${message.author}, the user you mentioned is currently AFK.. Leave a message if urgent by DMing him`)
+ if(db.has(user.id + '-afk')) message.channel.send(`${message.author}, the user you mentioned is currently AFK. Leave a message if urgent by DMing him`)
  })
 
 
