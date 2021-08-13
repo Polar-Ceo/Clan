@@ -1,3 +1,4 @@
+//here
 const { MessageEmbed } = require('discord.js');
 
 module.exports = { 
@@ -11,13 +12,13 @@ module.exports = {
 
           const e1 =  new MessageEmbed()
 
-       .setDescription(`**Please Enter A Role!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please Enter A Role!**`)
       
        .setColor("#12abff")
 
        const e2 =  new MessageEmbed()
 
-       .setDescription(`**Please Enter A Valid Role!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please Enter A Valid Role!**`)
       
        .setColor("#12abff")
 
@@ -36,7 +37,7 @@ module.exports = {
         }).map(member => {
             return member.user.username;
         })
-        if (membersWithRole > 2048) return message.channel.send('**List Is Too Long!**')
+        if (membersWithRole > 2048) return message.channel.send('<a:729477543119552592:875237546370662460> **List is too long!**')
 
         let roleEmbed = new MessageEmbed()
             .setColor("#12abff")

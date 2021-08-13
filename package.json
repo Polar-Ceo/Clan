@@ -27,6 +27,7 @@
     "discord-akairo": "^8.1.0",
     "discord-anti-alt": "^1.1.0",
     "discord-buttons": "^1.0.3-beta",
+    "discord-economy": "^1.2.2",
     "discord-giveaway": "^1.1.4",
     "discord-giveaways": "^4.5.1",
     "discord-image-generation": "^1.4.9",
@@ -99,6 +100,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Manav Garg",
-  "license": "ISC"
+  "author": "POLAR_CEO",
+  "license": "PSC"
 }

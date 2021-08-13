@@ -1,8 +1,7 @@
 # Code
 A moderator/fun bot 
 
-To start the bot go to **secrets** add a new secrets named `TOKEN`
-Make sure `TOKEN` is in caps or the bot will not run
+To start the bot go to **secrets** add a new secrets named `TOKEN` make sure `TOKEN` is in caps or the bot will not run
 
 -The prefix it !
 

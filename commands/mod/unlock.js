@@ -13,7 +13,7 @@ module.exports = {
 
 if(!message.member || !message.member.hasPermission("KICK_MEMBERS")){
  let embed = new Discord.MessageEmbed()
-.setTitle("<:853588019923124224:864764645821775873> **ERROR**<:853588019923124224:864764645821775873> ")
+.setTitle("<a:729477543119552592:875237546370662460> **ERROR** <a:729477543119552592:875237546370662460> ")
 .setDescription("You don't have the **permission** to use this command")
 
 message.channel.send(embed);
@@ -23,7 +23,7 @@ message.channel.updateOverwrite
 SEND_MESSAGES: true
 });
 let embed = new Discord.MessageEmbed()
-.setTitle("<:download106:868990692884643860> CHANNEL UNLOCKED <:download106:868990692884643860> ")
+.setTitle("<a:802803657820864522:875243426944270376> CHANNEL UNLOCKED <a:802803657820864522:875243426944270376>")
 .setDescription("**Channel has been unlocked**.");
 message.channel.send(embed);
 }

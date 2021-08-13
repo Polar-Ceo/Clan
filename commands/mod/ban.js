@@ -13,30 +13,30 @@ module.exports = {
        
        const e1 =  new MessageEmbed()
 
-       .setDescription(`**You Dont Have The Permissions To Ban Users! - [BAN_MEMBERS]**`)
+       .setDescription(`<:733987631628550175:870949748604039189>**You Dont Have The Permissions To Ban Users!**<:733987631628550175:870949748604039189>`)
       .setColor("#12abff")
 
         const e2 =  new MessageEmbed()
 
-       .setDescription(`**Please Provide A User To Ban**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please Provide A User To Ban** <a:729477543119552592:875237546370662460>`)
       
        .setColor("#12abff")
 
        const e3 =  new MessageEmbed()
 
-       .setDescription(`**User Is Not In The Guild**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **User Is Not In The Guild** <a:729477543119552592:875237546370662460>`)
       
        .setColor("#12abff")
 
        const e4 =  new MessageEmbed()
 
-       .setDescription(`**You Cannot Ban Yourself**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **You Cannot Ban Yourself **<a:729477543119552592:875237546370662460>`)
       
        .setColor("#12abff")
 
        const e5 =  new MessageEmbed()
 
-       .setDescription(`**You cannot ban this user**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **You cannot ban this user** <a:729477543119552592:875237546370662460>`)
       
        .setColor("#12abff")
        
@@ -68,7 +68,7 @@ module.exports = {
             } else {
                 var sembed2 = new MessageEmbed()
                 .setColor("#12abff")
-                .setDescription(`**${banMember.user.username}** has been banned`)
+                .setDescription(`<a:729477543119552592:875237546370662460> **${banMember.user.username}** has been banned`)
             message.channel.send(sembed2)
             }
             let channel = db.fetch(`modlog_${message.guild.id}`)

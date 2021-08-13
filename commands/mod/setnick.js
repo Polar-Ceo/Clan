@@ -12,27 +12,27 @@ module.exports = {
     run: async (bot, message, args) => {
 
       const e1 =  new MessageEmbed()
-       .setDescription(`**You Dont Have Permissions To Change Nickname!**`)
+       .setDescription(`❌ **You Dont Have Permissions To Change Nickname!**`)
        .setColor("#12abff")
 
              const e2 =  new MessageEmbed()
-       .setDescription(`**I Dont Have Permissions To Change Nickname!**`)
+       .setDescription(`❌ **I Dont Have Permissions To Change Nickname!**`)
        .setColor("#12abff")
 
              const e3 =  new MessageEmbed()
-       .setDescription(`**Please Enter A User!**`)
+       .setDescription(`❌ **Please Enter A User!**`)
        .setColor("#12abff")
 
              const e4 =  new MessageEmbed()
-       .setDescription(`**Please Enter A Username!**`)
+       .setDescription(`❌ **Please Enter A Username!**`)
        .setColor("#12abff")
 
                     const e5 =  new MessageEmbed()
-       .setDescription(`**Cannot Set or Change Nickname Of This User!**`)
+       .setDescription(`❌ **Cannot Set or Change Nickname Of This User!**`)
        .setColor("#12abff")
 
                     const e6 =  new MessageEmbed()
-       .setDescription(`**Please Enter A Nickname**`)
+       .setDescription(`❌ **Please Enter A Nickname**`)
        .setColor("#12abff")
 
         if (!message.member.hasPermission("CHANGE_NICKNAME")) return message.channel.send(e1)
@@ -54,10 +54,10 @@ module.exports = {
         member.setNickname(nick)
         const embed = new MessageEmbed()
             .setColor("#12abff")
-            .setDescription(`**Changed Nickname of ${member.displayName} to ${nick}**`)
+            .setDescription(`<a:802803657820864522:875243426944270376> **Changed Nickname of ${member.displayName} to ${nick}**`)
         message.channel.send(embed)
         } catch {
-            return message.channel.send("**Missing Permissions - [CHANGE_NICKNAME]")
+            return message.channel.send("<a:729477543119552592:875237546370662460> **You don't have permission")
         }
 
         let channel = db.fetch(`modlog_${message.guild.id}`)

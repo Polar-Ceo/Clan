@@ -13,13 +13,13 @@ module.exports = {
 
     run: async(client, message, args) => {
         const noadmin = new Discord.MessageEmbed()
-            .setDescription(`*You are missing \`ADMINISTRATOR\` permissions to perform this execution.*`);
+            .setDescription(`<a:729477543119552592:875237546370662460> You don't have permission`);
 
                 if (message.member.hasPermission("ADMINISTRATOR")) {
                     message.guild.fetchBans().then(bans => {
                         if (bans.size == 0) {{
               const embed = new MessageEmbed()
-               .setDescription(`There are no banned users.`)
+               .setDescription(`<a:802803657820864522:875243426944270376> There are no banned users.`)
                .setColor('#12abff')
                  message.reply(embed)
             }   

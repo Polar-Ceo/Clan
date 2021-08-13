@@ -16,17 +16,17 @@ run: async (client, message, args) => {
             let noEmbed = new MessageEmbed()
                 .setAuthor(message.member.displayName, message.author.displayAvatarURL())
                 .setColor("BLUE")
-                .setFooter("No leaderboard")
+                .setFooter("No one on the leaderboard")
             return message.channel.send(noEmbed)
         };
 
         wallet.length = 10;
 var finalLb = "";
 for (var i in wallet) {
-  finalLb += `**${wallet.indexOf(wallet[i])+1}. ${client.users.cache.get(wallet[i].ID.split('_')[1]) ? client.users.cache.get(wallet[i].ID.split('_')[1]).tag : "Unknown User#0000:money_with_wings:"}** - ${wallet[i].data}\n`;
+  finalLb += `${wallet.indexOf(wallet[i])+1}. **${client.users.cache.get (wallet[i].ID.split('_')[1]) ? client.users.cache.get(wallet[i].ID.split('_')[1]).tag : "Unknown User#0000:money_with_wings:"}** - ${wallet[i].data} :money_with_wings: \n`;
 }
         const embed = new MessageEmbed()
-            .setTitle(`Leaderboard of ${message.guild.name}!`, message.guild.iconURL)
+            .setTitle(`GLOBAL LEADERBOARD`)
             .setColor("BLUE")
             .setDescription(finalLb)
         message.channel.send(embed);

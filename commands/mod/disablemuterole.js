@@ -12,13 +12,13 @@ module.exports = {
 
        const e2 =  new MessageEmbed()
 
-       .setDescription(`**You Do Not Have The Required Permissions!**`)
+       .setDescription(` <:733987631628550175:870949748604039189> **You Do Not Have The Required Permissions!** <:733987631628550175:870949748604039189>`)
       
        .setColor("#12abff")
 
               const e1 =  new MessageEmbed()
 
-       .setDescription(`**There is no mute role to disable**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **There is no mute role to disable** <a:729477543119552592:875237546370662460>`)
       
        .setColor("#12abff")
 
@@ -33,11 +33,11 @@ module.exports = {
                 let role = message.guild.roles.cache.get(a)
                 db.delete(`muterole_${message.guild.id}`)
 
-                message.channel.send(`**\`${role.name}\` Has Been Successfully Disabled**`)
+                message.channel.send(`<a:802803657820864522:875243426944270376> **\`${role.name}\` Has Been Successfully Disabled** <a:802803657820864522:875243426944270376>`)
             }
             return;
         } catch {
-            return message.channel.send("**Error - `Missing Permissions or Role Doesn't Exist`**")
+            return message.channel.send("<a:729477543119552592:875237546370662460> **Error - `Missing Permissions or Role Doesn't Exist`** <a:729477543119552592:875237546370662460>")
         }
     }
 }

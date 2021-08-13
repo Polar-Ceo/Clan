@@ -13,7 +13,7 @@ module.exports = {
     },
     run: async (client, message) => {
  if(message.member) {
-let role = message.guild.roles.cache.find(role => role.name === "Verified");
+let role = message.guild.roles.cache.find(role => role.name === "MODERATOR");
 message.member.roles.add(role);
 let embed = new Discord.MessageEmbed()
 .setTitle("Verified")

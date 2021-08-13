@@ -17,7 +17,7 @@ module.exports = {
     run: async (bot, message, args) => {
         let warnPermErr = new MessageEmbed()
         .setTitle("**User Permission Error!**")
-        .setDescription("**Sorry, you don't have permissions to use this! ❌**")
+        .setDescription("❌ **Sorry, you don't have permissions to use this!**")
             if(!message.channel.permissionsFor(message.member).has(['MANAGE_MESSAGES'])) return message.channel.send(warnPermErr);
     
         const user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(x => x.user.username.toLowerCase() === args.slice(0).join(" ") || x.user.username === args[0])
@@ -26,20 +26,20 @@ module.exports = {
 
         if (!user) {
           const embed = new MessageEmbed()
-               .setDescription(`You need to specify a valid member`)
+               .setDescription(`❌ You need to specify a valid member`)
                .setColor('#12abff')
             return message.channel.send(embed)
         }
 
         if (!role) {
            const embed = new MessageEmbed()
-          .setDescription(`You need to specify a valid role`)
+          .setDescription(`❌ You need to specify a valid role`)
                .setColor('#12abff')
             return message.channel.send(embed)
         }     
         
         if (message.guild.me.roles.highest.id === role.id) {
-            return message.channel.send(`I cannot add or remove that role because that is my highest role`)}
+            return message.channel.send(`❌ I cannot add or remove that role because that is my highest role`)}
       
           
          
@@ -49,8 +49,7 @@ module.exports = {
                 user.roles.remove(role.id)
                 
            const embed = new MessageEmbed()
-          .setDescription(`<:854992808305360906:856002172297543730>
- Changed roles for ${user.user.tag}, -${role.name} <:854992808305360906:856002172297543730>
+          .setDescription(`<a:729477543119552592:875237546370662460> Changed roles for ${user.user.tag}, -${role.name}
 `)
                .setColor('#12abff')
             return message.channel.send(embed)
@@ -64,7 +63,7 @@ module.exports = {
             try {
                 user.roles.add(role.id)
            const embed = new MessageEmbed()
-          .setDescription(`<:854992808305360906:856002172297543730>  Changed roles for ${user.user.tag}, +${role.name}<:854992808305360906:856002172297543730>`)
+          .setDescription(`<a:802803657820864522:875243426944270376> Changed roles for ${user.user.tag}, +${role.name}<:854992808305360906:856002172297543730>`)
                .setColor('#12abff')
             return message.channel.send(embed)
              

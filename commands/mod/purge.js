@@ -7,29 +7,29 @@ module.exports = {
         aliases: [],
         category: "moderation",
         description: "Deletes messages from a channel",
-        usage: "m/purge [amount of messages]"
+        usage: "purges messages"
     },
     run: async (bot, message, args) => {
 
 const e1 =  new MessageEmbed()
 
-       .setDescription(`**Enter a vaild number to delete messages**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Enter a vaild number to delete messages**`)
       
        .setColor("#12abff")
 
        const e2 =  new MessageEmbed()
 
-       .setDescription(`**Please Supply A Number Less Than 100!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please Supply A Number Less Than 100!**`)
       
        .setColor("#12abff")
 
       const e3 =  new MessageEmbed()
 
-       .setDescription(`**Please Supply A Number More Than 1!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please Supply A Number More Than 1!**`)
       
        .setColor("#12abff")
 
-        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You Don't Have Sufficient Permissions!- [MANAGE_MESSAGES]")
+        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("<a:729477543119552592:875237546370662460> You don't have  Permissions!")
         if (isNaN(args[0]))
             return message.channel.send(e1)
 
@@ -40,6 +40,6 @@ const e1 =  new MessageEmbed()
             return message.channel.send(e3)
 
         message.channel.bulkDelete(args[0])
-            .then(messages => message.channel.send(`**Succesfully deleted \`${messages.size}/${args[0]}\` messages**`).then(msg => msg.delete({ timeout: 5000 }))).catch(() => null)
+            .then(messages => message.channel.send(`<a:802803657820864522:875243426944270376> **Succesfully deleted \`${messages.size}/${args[0]}\` messages**`).then(msg => msg.delete({ timeout: 5000 }))).catch(() => null)
     }
 }

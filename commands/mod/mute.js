@@ -11,11 +11,11 @@ module.exports = {
 
       const e1 =  new MessageEmbed()
 
-       .setDescription(`**You dont have permmissions to mute someone!**`)     
+       .setDescription(`<:733987631628550175:870949748604039189> **You dont have permmissions to mute someone!**`)     
        .setColor("#12abff")
 
        const e2 =  new MessageEmbed()
-       .setDescription(`**I don't have permissions to mute someone!**`)     
+       .setDescription(`<:733987631628550175:870949748604039189> **I don't have permissions to mute someone!**`)     
        .setColor("#12abff")
 
        const e3 =  new MessageEmbed()
@@ -23,23 +23,23 @@ module.exports = {
        .setColor("#12abff")
 
        const e4 =  new MessageEmbed()
-       .setDescription(`**Please enter a valid user to be muted!**`)      
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please enter a valid user to be muted!**`)      
        .setColor("#12abff")
   
        const e5 =  new MessageEmbed()
-       .setDescription(`**You cannot mute yourself!**`)    
+       .setDescription(`<:733987631628550175:870949748604039189> **You cannot mute yourself!**`)    
        .setColor("#12abff")
 
        const e6 =  new MessageEmbed()
-       .setDescription(`**Cannot mute this user!**`)
+       .setDescription(`<:733987631628550175:870949748604039189> **Cannot mute this user!**`)
        .setColor("#12abff")
        
        const e7 =  new MessageEmbed()
-       .setDescription(`**Cannot mute bots!**`)
+       .setDescription(`<:733987631628550175:870949748604039189> **Cannot mute bots!**`)
        .setColor("#12abff")
 
        const e8 =  new MessageEmbed()
-       .setDescription(`**User Is Already Muted!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **User Is Already Muted!**`)
        .setColor("#12abff")
 
         try {
@@ -107,7 +107,7 @@ module.exports = {
                 const sembed = new MessageEmbed()
                     .setColor("#12abff")
                     .setAuthor(message.guild.name, message.guild.iconURL())
-                    .setDescription(`${mutee.user.username} was successfully muted for ${reason}`)
+                    .setDescription(`<a:802803657820864522:875243426944270376> ${mutee.user.username} was successfully muted for ${reason}`)
                 message.channel.send(sembed);
                 } else {
                     const sembed2 = new MessageEmbed()

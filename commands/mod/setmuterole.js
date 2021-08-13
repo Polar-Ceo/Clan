@@ -11,19 +11,19 @@ module.exports = {
   run: async (bot, message, args) => {
 
     const e1 =  new MessageEmbed()
-       .setDescription(`**You Do Not Have The Required Permissions!**`)
+       .setDescription(`❌ **You Do Not Have The Required Permissions!**`)
        .setColor("#12abff")
 
            const e2 =  new MessageEmbed()
-       .setDescription(`**Please Enter A Role Name or ID To Set!**`)
+       .setDescription(`❌ **Please Enter A Role Name or ID To Set!**`)
        .setColor("#12abff")
 
                   const e3 =  new MessageEmbed()
-       .setDescription(`**Please Enter A Valid Role Name or ID!**`)
+       .setDescription(`❌ **Please Enter A Valid Role Name or ID!**`)
        .setColor("#12abff")
 
                   const e4 =  new MessageEmbed()
-       .setDescription(`**This Role is Already Set As Muterole!**`)
+       .setDescription(`<a:802803657820864522:875243426944270376> **This Role is Already Set As Muterole!**`)
        .setColor("#12abff")
 
 
@@ -36,7 +36,7 @@ module.exports = {
       let roleName = message.guild.roles.cache.get(b);
       if (message.guild.roles.cache.has(b)) {
         return message.channel.send(
-          `**Muterole Set In This Server Is \`${roleName.name}\`!**`
+          `<a:802803657820864522:875243426944270376> **Muterole Set In This Server Is \`${roleName.name}\`!**`
         );
       } else
         return message.channel.send(e2)
@@ -63,7 +63,7 @@ module.exports = {
         db.set(`muterole_${message.guild.id}`, role.id);
 
         message.channel.send(
-          `**\`${role.name}\` Has Been Set Successfully As Muterole!**`
+          `<a:802803657820864522:875243426944270376> **\`${role.name}\` Has Been Set Successfully As Muterole!**`
         );
       }
     } catch (e) {

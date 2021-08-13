@@ -4,10 +4,9 @@ const Discord = require("discord.js");
 module.exports = {
     config: {
         name: "nuke",
-        aliases: ["work"],
-        category: "work for money",
-        description: "Give you money for working",
-        accessableby: "everyone"
+        aliases: ["nuke"],
+        category: "MOD",
+        description: "Nukes the channel",
     },
     run: async (client, message) => {
 if (message.content.startsWith('!nuke')) {

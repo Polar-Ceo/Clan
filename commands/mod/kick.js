@@ -16,23 +16,23 @@ module.exports = {
       .setColor("#12abff")
 
       const em2 =  new MessageEmbed()
-      .setDescription(`I Do Not Have Permissions To Kick Members!`)
+      .setDescription(`<:733987631628550175:870949748604039189> I Do Not Have Permissions To Kick Members!`)
       .setColor("#12abff")
 
       const em3 =  new MessageEmbed()
-      .setDescription(`**Provide a user to kcik!**`)
+      .setDescription(`<a:729477543119552592:875237546370662460> **Provide a user to kcik!**`)
       .setColor("#12abff")
 
       const em4 =  new MessageEmbed()
-      .setDescription(`**You are unable to kick yourself**`)
+      .setDescription(`<a:729477543119552592:875237546370662460> **You are unable to kick yourself**`)
       .setColor("#12abff")
 
       const em5 =  new MessageEmbed()
-      .setDescription(`**You are unable to kick this user**`)
+      .setDescription(`<:733987631628550175:870949748604039189> **You are unable to kick this user**`)
       .setColor("#12abff")
 
       const em6 =  new MessageEmbed()
-      .setDescription(`**I cannot kick my bot family**`)
+      .setDescription(`<:733987631628550175:870949748604039189> **I cannot kick my bot family**`)
       .setColor("#12abff")
 
         try {
@@ -42,7 +42,7 @@ module.exports = {
             if (!args[0]) return message.channel.send(em3)
 
             var kickMember = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args[0].toLocaleLowerCase()) || message.guild.members.cache.find(ro => ro.displayName.toLowerCase() === args[0].toLocaleLowerCase());
-            if (!kickMember) return message.channel.send("**User Is Not In The Guild!**");
+            if (!kickMember) return message.channel.send("<a:729477543119552592:875237546370662460> **User Is Not In The Guild!**");
 
 
             if (kickMember.id === message.member.id) return message.channel.send(em4);
@@ -66,12 +66,12 @@ module.exports = {
             if (reason) {
             var sembed = new MessageEmbed()
                 .setColor("#12abff")
-                .setDescription(`**${kickMember.user.username}** has been kicked for ${reason}`)
+                .setDescription(`<:733988422405980211:868915509939273799> **${kickMember.user.username}** has been kicked reaction : ${reason}`)
             message.channel.send(sembed);
             } else {
                 var sembed2 = new MessageEmbed()
                 .setColor("#12abff")
-                .setDescription(`**${kickMember.user.username}** has been kicked`)
+                .setDescription(`<:733988422405980211:868915509939273799> **${kickMember.user.username}** has been kicked`)
             message.channel.send(sembed2);
             }
             let channel = db.fetch(`modlog_${message.guild.id}`)

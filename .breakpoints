@@ -1,10 +1,18 @@
 {
   "files": {
+    "commands/mod/inventory.js": [
+      {
+        "id": "9938aa47-7651-4ffc-9318-e5cf996a252b",
+        "line": 13,
+        "version": 78,
+        "index": 318
+      }
+    ],
     "package-lock.json": [
       {
         "id": "26494c6a-b473-45e1-9865-d2541c8467af",
         "line": 1,
-        "version": 15,
+        "version": 16,
         "index": 0
       }
     ]

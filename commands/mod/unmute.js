@@ -11,23 +11,23 @@ module.exports = {
     run: async (bot, message, args) => {
 
       const e1 =  new MessageEmbed()
-       .setDescription(`**You dont have the permissions to unmute someone!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **You dont have the permissions to unmute someone!**`)
        .setColor("#12abff")
 
        const e2 =  new MessageEmbed()
-       .setDescription(`**I don't have permissions to unmute someone!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **I don't have permissions to unmute someone!**`)
        .setColor("#12abff")
 
        const e3 =  new MessageEmbed()
-       .setDescription(`**Please enter a user!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please enter a user!**`)
        .setColor("#12abff")
 
        const e4 =  new MessageEmbed()
-       .setDescription(`**Please enter a valid user!**`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please enter a valid user!**`)
        .setColor("#12abff")
 
        const e5 =  new MessageEmbed()
-       .setDescription(`**There is no mute role to remove!**`)
+       .setDescription(`<:733987631628550175:870949748604039189> **There is no mute role to remove!**`)
        .setColor("#12abff")
 
         if (!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.send(e1)
@@ -68,7 +68,7 @@ module.exports = {
           }
             const sembed = new MessageEmbed()
                 .setColor("#12abff")
-                .setDescription(`${mutee.user.username} was successfully unmuted.`)
+                .setDescription(`<a:802803657820864522:875243426944270376> ${mutee.user.username} was successfully unmuted.`)
             message.channel.send(sembed);
         
 
