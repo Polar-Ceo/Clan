@@ -19,7 +19,7 @@ if(!message.member || !message.member.hasPermission("ADMINISTRATOR")){
 message.channel.send(embed);
 } else {
   let embed = new Discord.MessageEmbed()
-.setTitle("<:853588019923124224:864764645821775873> Channel Nuked <:853588019923124224:864764645821775873> ")
+.setTitle("<a:729477543119552592:875237546370662460> Channel Nuked <a:729477543119552592:875237546370662460> ")
 .setDescription("**The channel has been nuked**");
 
       message.channel.clone({position: message.channel.rawPosition }).then(ch => { ch.send(embed)

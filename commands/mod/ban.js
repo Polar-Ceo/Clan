@@ -18,7 +18,7 @@ module.exports = {
 
         const e2 =  new MessageEmbed()
 
-       .setDescription(`<a:729477543119552592:875237546370662460> **Please Provide A User To Ban** <a:729477543119552592:875237546370662460>`)
+       .setDescription(`<a:729477543119552592:875237546370662460> **Please Provide A User To Ban** `)
       
        .setColor("#12abff")
 

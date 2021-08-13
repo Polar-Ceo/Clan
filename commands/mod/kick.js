@@ -20,7 +20,7 @@ module.exports = {
       .setColor("#12abff")
 
       const em3 =  new MessageEmbed()
-      .setDescription(`<a:729477543119552592:875237546370662460> **Provide a user to kcik!**`)
+      .setDescription(`<a:729477543119552592:875237546370662460> **Please provide a user to kick!**`)
       .setColor("#12abff")
 
       const em4 =  new MessageEmbed()

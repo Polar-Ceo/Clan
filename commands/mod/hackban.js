@@ -13,7 +13,7 @@ module.exports = {
 
     run: async(bot, message, args) => {
         const target = args[0];
-        if (isNaN(target)) return message.reply(`Mention a user to dm  <a:729477543119552592:875237546370662460>`);
+        if (isNaN(target)) return message.reply(`Mention a user ID to ban  <a:729477543119552592:875237546370662460>`);
 
         const reason   = args.splice(1, args.length).join(' ');
 
